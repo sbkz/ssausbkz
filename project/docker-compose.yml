@@ -1,0 +1,32 @@
+version: "3.9"
+
+services:
+  frontend:
+    image: my-react-app
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+
+  backend:
+    image: my-cakeroom-backend
+    ports:
+      - "3004:3004"
+    environment:
+      MONGODB_URI: mongodb://mongodb:27017/conf  
+      CLIENT_URL: http://localhost:3000
+      API_URL: http://localhost:3004
+      JWT_ACCESS_SECRET: "secret"
+      JWT_REFRESH_SECRET: "refresh_secret"
+    depends_on:
+      - mongodb
+
+  mongodb:
+    image: mongo:latest 
+    ports:
+      - "27017:27017"  
+    volumes:
+      - mongodb_data:/data/db  
+
+volumes:
+  mongodb_data:  

@@ -1,0 +1,59 @@
+@import '../../style/variables.scss';
+
+.footer {
+    background-color: $color_header;
+    width: 100%;
+    padding: 25px 0;
+    bottom: 0;
+    &-wrapper {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    &-block {
+        height: 100%;
+        width: 33%;
+        display: flex;
+        justify-content: center;
+        &:nth-child(1) {
+            grid-area: a;
+        }
+        &:nth-child(3) {
+            grid-area: c;
+        }
+        &:nth-child(2) {
+            text-align: center;
+            margin-left: 0;
+            width: 420px;
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-around;
+            grid-area: b;
+        }
+        &__list {
+            display: flex;
+            flex-direction: column;
+            &__heading {
+                font-size: 16px;
+                font-weight: 600;
+                margin-bottom: 15px;
+            }
+            a {
+                font-size: 16px;
+                font-weight: 400;
+                list-style-type: none;
+                margin-bottom: 10px;
+                text-decoration: none;
+                color: black;
+            }
+            &__section {
+                width: 33%;
+                align-items: center;
+                text-align: center;
+                img {
+                    width: 50px;
+                }
+            }
+        }
+    }
+}

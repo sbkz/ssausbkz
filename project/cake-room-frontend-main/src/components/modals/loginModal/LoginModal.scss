@@ -1,0 +1,181 @@
+.loginModal {
+    width: 300px;
+    padding-bottom: 20px;
+    background-color: #9d8189;
+    border-radius: 20px;
+    position: relative;
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba($color: #000000, $alpha: 0.5);
+        position: fixed;
+        z-index: 10;
+        top: 0;
+    }
+    &__validate-warning {
+        color: #fff;
+        font-size: 15px;
+        margin-left: 5px;
+    }
+    &__title {
+        color: #fff;
+        font-size: 27px;
+        text-align: center;
+        margin-top: 25px;
+    }
+    &__adminLink {
+        display: block;
+        width: 150px;
+        text-align: center;
+        margin: 0 auto;
+        text-decoration: none;
+        color: #fff;
+        border: 1px solid #fff;
+        padding: 5px 20px;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+    &__greeting {
+        text-align: center;
+        color: #fff;
+        font-family: PTSans-Regular;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin-top: 35px;
+        span {
+            font-size: 20px;
+            font-family: PTSans-Bold;
+        }
+    }
+    &__logout {
+        width: 200px;
+        height: 50px;
+        border-radius: 15px;
+        font-family: PTSans-Regular;
+        font-size: 18px;
+        border: none;
+        cursor: pointer;
+        background-color: #FFFFFF;
+        color: #000000;
+        &:hover {
+            background-color: #f5ebe0;
+        }
+        &_wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 110px;
+        }
+    }
+    &__form {
+        display: block;
+        margin: 0 auto;
+        margin-top: 20px;
+        width: 270px;
+        &_input {
+            width: 100%;
+            margin-bottom: 20px;
+            height: 50px;
+            border-radius: 10px;
+            padding-left: 20px;
+            font-size: 17px;
+            outline: none;
+            background-color: #FFFFFF;
+            color: #000000;
+            border: none;
+            &-check {    
+                width: 23px;
+                height: 15px;
+                border: none;
+                margin: 0;
+                margin-left: 3px;
+                margin-top: 3px;
+            }
+            &-checkTitle {
+                font-size: 15px;
+                color: #fff;
+                display: block;
+                margin-left: 30px;
+                a {
+                    color: #fff;
+                }
+            }
+        }
+        &_registration {
+            display: flex;
+            justify-content: center;
+            color: #fff;
+            font-size: 17px;
+            margin-top: 5px;
+            div {
+                cursor: pointer;
+            }
+        }
+        &_button {
+            display: block;
+            width: 230px;
+            height: 40px;
+            margin: 0 auto;
+            margin-top: 15px;
+            border-radius: 10px;
+            border: none;
+            font-size: 17px;
+            cursor: pointer;
+            background-color: #FFFFFF;
+            color: #000000;
+            &:hover {
+                background-color: #f5ebe0;
+            }
+        }
+        &_checkDiv {
+            input[type="checkbox"] {
+                display: none;
+            }
+            input[type="checkbox"] + label {
+                display: block;
+                position: relative;
+                cursor: pointer;
+                user-select: none;
+            }
+            input[type="checkbox"] + label::before {
+                content: "";
+                display: block;
+                width: 17px;
+                height: 17px;
+                border: 1px solid #343a3f;
+                border-radius: 0.2em;
+                position: absolute;
+                left: -25px;
+                top: 0;
+                -webkit-transition: all 0.2s, 0.2s ease-in-out;
+                transition: all 0.2s, 0.2s ease-in-out;
+                background: #f3f3f3;
+            }
+            input[type="checkbox"]:checked + label::before {
+                width: 15px;
+                height: 15px;
+                border-radius: 0.2em;
+                border: 2px solid #fff;
+                -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+                background: #50565a;
+            }
+            &-redBorder {
+                input[type="checkbox"] + label::before {
+                    border: 1px solid #E60000;
+                }
+            }
+        }
+    }
+    &__close {
+        position: absolute;
+        top: 7px;
+        right: 8px;
+        cursor: pointer;
+    }
+}

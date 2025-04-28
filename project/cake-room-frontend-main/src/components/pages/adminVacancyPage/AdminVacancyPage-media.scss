@@ -1,0 +1,11 @@
+@media (max-width:620px) {
+    .adminVacancyPage {
+        &__title {
+            font-size: 25px;
+        }
+        &__addVacancy {
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+    }
+}

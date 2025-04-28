@@ -1,0 +1,35 @@
+@import './variables.scss';
+
+@font-face {
+    font-family: 'PTSans-Bold';
+    src:url('../fonts/PTSans-Bold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'PTSans-Regular';
+    src:url('../fonts/PTSans-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+.container {
+    max-width: 1170px;
+    height: 100%;
+    margin: 0 auto;
+}
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    position: relative;
+}
+
+
+* {
+    box-sizing: border-box;
+    font-family: PTSans-Regular;
+}
+
+h1 {
+    margin-top: 0;
+}

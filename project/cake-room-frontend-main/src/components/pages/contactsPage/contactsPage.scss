@@ -1,0 +1,69 @@
+.contacts {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 'b a' 'b c';
+    column-gap: 100px;
+    padding: 60px 0;
+    justify-content: center;
+    &-logo {
+        align-self: center;
+        justify-self: center;
+        grid-area: b;
+        img {
+            width: 100%;
+        }
+    }
+    &-info {
+        grid-area: c;
+        &_working {
+            display: flex;
+            justify-content: space-between;
+            width: 200px;
+            &-days p, &-hours p{
+                margin: 0;
+                margin-bottom: 5px;
+            }
+        }
+        &__descr {
+            margin: 0;
+            a {        
+                color: black;
+                text-decoration: none;
+                margin-left: 30px;
+            }
+            &_img {
+                position: absolute;
+                &-viber {
+                    width: 25px;
+                    height: 25px;
+                    top: -3px;
+                }
+                &-email {
+                    left: 3px;
+                }
+                &-phone {
+                    left: 2px;
+                    top: 1px;
+                }
+
+            }
+            &_links{
+                position: relative;
+                max-width: 163px;
+                margin-bottom: 13px;
+            }
+            
+        }
+        &__subtitle {
+            margin-bottom: 10px;
+        }
+        &__title {
+            margin: 0;
+            grid-area: a;
+            font-size: 23px;
+        }
+    }
+}
+.contact {
+    background-color: #F7F7F7;
+}

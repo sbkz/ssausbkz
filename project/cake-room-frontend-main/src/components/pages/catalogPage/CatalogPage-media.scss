@@ -1,0 +1,32 @@
+@media (max-width: 1129px) {
+    .catalog {
+        &__products {
+            &-wrapper {
+                margin: 0 auto;
+                margin-top: 10px;
+                width: 90%;
+            }
+        }       
+    }
+}
+@media (max-width: 1179px) {
+    .catalog {
+        &__arrowUp {
+            right: 3px;
+        }
+    }
+}
+@media (max-width: 444px) {
+    .catalog {
+        &__arrowUp {
+            right: 1px;
+        }       
+    }
+}
+@media (max-width: 428px) {
+    .catalog {
+        &__arrowUp{
+            display: none;
+        }
+    }
+}

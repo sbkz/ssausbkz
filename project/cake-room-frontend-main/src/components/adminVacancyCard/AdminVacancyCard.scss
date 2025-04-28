@@ -1,0 +1,63 @@
+.adminVacancyCard {
+    width: 100%;
+    border: 1px solid #D8D8D8;
+    border-radius: 10px;
+    height: 150px;
+    display: grid;
+    grid-template-columns:150px 100px 1fr 150px;
+    margin-bottom: 5px;
+    padding: 10px;
+    &__infoWrapper {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+        justify-content: space-between;
+        div {
+            display: flex;
+            flex-direction: column;
+            label {
+                font-family: PTSans-Regular;
+                font-size: 17px;
+                font-weight: 500;
+            }
+        }
+    }
+    &__name {
+        width: 100%;
+        height: 30px;
+        outline: none;
+        border-radius: 5px;
+        border: 1px solid black;
+        font-family: PTSans-Regular;
+        font-size: 15px;
+        font-weight: 500;
+    }
+    &__price {
+        width: 100%;
+        height: 30px;
+        outline: none;
+        border-radius: 5px;
+        border: 1px solid black;
+    }
+    &__commit {
+        grid-column-start: 4;
+        align-self: center;
+    }
+    &__changeBtn {
+        width: 100%;
+        height: 50px;
+        border-radius: 10px;
+        border: none;
+        background-color: #ffddd2;
+        color: #fff;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 600;
+        cursor: pointer;
+        &:hover {
+            background-color: darken(#ffddd2, 10%);
+        }
+    }
+}

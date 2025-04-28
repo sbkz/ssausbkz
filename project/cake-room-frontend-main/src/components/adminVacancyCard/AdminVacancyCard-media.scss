@@ -1,0 +1,33 @@
+@media (max-width:620px) {
+    .adminVacancyCard {
+        grid-template-columns: 250px;
+        grid-template-rows: 120px 150px;
+        justify-content: center;
+        padding-top: 30px;
+        max-width: 300px;
+        height: 100%;
+        position: relative;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        &__infoWrapper {
+            grid-column: 1/2;
+            grid-row: 1/2;
+            margin-left: 0;
+        }
+        &__commit {
+            grid-column: 1/2;
+            grid-row: 2/3;
+        }
+        &__iconSetting {
+            position: absolute;
+            width: 30px;
+            right: 5px;
+            top: 10px;
+        }
+    }
+}
+@media (max-width:370px) {
+    .adminVacancyCard {
+        grid-template-columns: 200px;
+    }
+}

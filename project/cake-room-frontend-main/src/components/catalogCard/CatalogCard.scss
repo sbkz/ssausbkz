@@ -1,0 +1,80 @@
+@import '../../style/variables.scss';
+
+.card {
+    &__wrapper{
+        width: 350px;
+        max-height: 450px;
+        border-radius: 5px;
+        overflow: hidden;
+        border: 1px solid #D8D8D8;
+    }
+    &__img {
+        width: 350px;
+        height: 300px;
+        object-fit: cover;
+        cursor: pointer;
+    }
+    &__describe {
+        height: 70px;
+        background-color: #FFFFFF;
+        padding: 15px 0 10px 11px;
+        border-bottom: 1px solid #EDEDF0;
+        &_name {
+            color: #292929;
+            font-family: Montserrat;
+            font-size: 17px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            text-decoration: none;
+            cursor: pointer;
+            &:hover {
+                color: $main-color;
+            }
+        }
+    }
+    &__footer {
+        background-color: #FFFFFF;
+        height: 50px;
+        display: flex;
+        &_price {
+            cursor:default;
+            display: flex;
+            margin-left: 21px;
+            margin-top: 13px;
+            color: #000;
+            border-right: 1px solid #EDEDF0;
+            width: 220px;
+            font-family: Montserrat;
+            font-size: 17px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal
+        }
+        &_basket{
+            display: flex;
+            align-items: center;
+            position: relative;
+            width: 150px;
+            &-icon {
+                position: absolute;
+                margin-left: 23px;
+                cursor: pointer;
+            }
+            &-inBasket{
+                cursor: default;
+            }
+            &-title {
+                cursor: pointer;
+                margin-left: 45px;
+                color: rgba(0, 0, 0, 0.88);
+                font-family: Montserrat;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                text-decoration: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,54 @@
+@media (max-width: 834px) {
+    .delivery {
+        &__block {
+            margin-bottom: 0;
+            flex-direction: column;
+            height: 100%;
+            &_truck {
+                flex-direction: column-reverse;
+                height: 100%;
+            }
+            &_text {
+                width: 80%;
+            }
+            &__title {
+                text-align: center;
+            }
+        }
+        &__map{
+            height: 300px;
+         }
+    }
+    
+}
+@media (max-width: 554px) {
+    .delivery {
+        &__block {
+            &_truck {
+                &-image {
+                    width: 100%;
+                    img {
+                        display: block;
+                        width: 300px;
+                        margin: 0 auto;
+                    }
+                }
+            }
+            &_image {
+                img {
+                    width: 200px;
+                }
+            }
+            &__descr {
+                p {
+                    font-size: 17px;
+                }
+            }
+        }
+        &__map{
+            height: 250px;
+         }
+    }
+    
+    
+}

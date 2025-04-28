@@ -1,0 +1,19 @@
+@media (max-width: 758px) {
+    .holidays {
+        &__title {
+            font-size: 25px;
+        }
+    }
+}
+@media (max-width: 568px) {
+    .holidays {
+        &-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        &__item {
+            width: 100%;
+            margin: 10px;
+        }
+    }
+}

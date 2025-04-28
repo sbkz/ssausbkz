@@ -1,0 +1,1 @@
+export const PHOTO_PATH = process.env.PHOTO_PATH || "pictures";

@@ -1,0 +1,38 @@
+.adminVacancyPage {
+    &__items {
+        padding: 0 30px 270px 30px;
+        flex: 1;
+    }
+    &__title {
+        margin-top: 20px;
+        color: #292929;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+    &__addVacancy {
+        width: 250px;
+        height: 50px;
+        background-color: #FFFFFF;
+        border: 2px solid #f7e1d7;
+        border-radius: 12px;
+        color: #000000;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        margin: 30px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:hover {
+            background-color: #f7e1d7;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(247, 225, 215, 0.3);
+        }
+    }
+}

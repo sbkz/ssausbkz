@@ -1,0 +1,13 @@
+@media (max-width: 320px) {
+    .loginModal {
+        width: 290px;   
+        &__form {
+            &_input {
+                height: 45px;
+            }
+        }
+        &__title {
+            font-size: 25px;
+        }
+    }
+}

@@ -1,0 +1,54 @@
+@media (max-width: 968px) {
+    .promo {
+        min-height: 450px;
+    }
+}
+@media (max-width: 768px) {
+    .promo {
+        &-block {
+            padding-top: 30px;
+            flex-direction: column-reverse;
+            &__descr {
+                font-size: 17px;
+            }
+            &__title {
+                font-size: 23px;
+            }
+        }
+    }
+}
+
+@media ((max-width: 768px) and (min-width: 400px)) {
+    .promo {
+        &-block__img {
+            width: 80%;
+        }
+    }
+}
+
+@media (max-width: 310px) {
+    .promo {
+        min-height: 380px;
+    }
+}
+
+.promo {
+    background: url('../../../resources/img/main_page/background.png') no-repeat center center;
+    background-size: cover;
+    min-height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.promo-block__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.promo-block__title-brand {
+    display: block;
+    margin-top: 10px;
+}

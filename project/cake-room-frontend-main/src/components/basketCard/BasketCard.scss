@@ -1,0 +1,116 @@
+.basketCard{
+    width: 100%;
+    border-bottom: 1px solid #EDEDF0;
+    display: flex;
+    justify-content: flex-start;
+    background-color: #FFF;
+    padding: 15px 17px;
+    position: relative;
+    &__img {
+        width: 80px;
+        height: 80px;
+        object-fit: cover;
+        background-color: #000;
+    }
+    &__remove {
+        position: absolute;
+        z-index: 10;
+        right: 7px;
+        top: 7px;
+        cursor: pointer;
+    }
+    &__infoBlock{
+        width: 100%;
+        margin-left: 15px;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        &-wrapper {
+            margin-top: 20px;
+            display: flex;
+            justify-content: flex-end;
+            position: relative;
+
+        }
+        &_title {
+            color: #292929;
+            font-family: Montserrat;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        &_amount {
+            display: flex;
+            min-width: 150px;
+            align-items: flex-end;
+            justify-content: space-between;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-70%);
+            &-dec {
+                width: 20px;
+                height: 20px;
+                border: 1px solid #EDEDF0;
+                border-radius: 5px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-bottom: 3px;
+                cursor: pointer;
+                &:active {
+                    background-color: #EDEDF0;
+                }
+            }
+            &-inc {
+                width: 20px;
+                height: 20px;
+                border: 1px solid #EDEDF0;
+                border-radius: 5px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-bottom: 2px;
+                cursor: pointer;
+                &:active {
+                    background-color: #EDEDF0;
+                }
+            }
+            &-sum {
+                color: #000;
+                text-align: center;
+                font-family: PTSans-Regular;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                input[type=number]::-webkit-inner-spin-button, 
+                input[type=number]::-webkit-outer-spin-button { 
+                -webkit-appearance: none; 
+                margin: 0;
+                }
+                input {
+                    width: 130px;
+                    font-family: PTSans-Regular;
+                    height: 20px;
+                    border: 1px solid #EDEDF0;
+                    border-radius: 5px;
+                    text-align: center;
+                    outline: none !important
+                }
+                
+            }
+        }
+        &_price {
+            color: #292929;
+            font-family: Montserrat;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            span {
+                color: #000000;
+            }
+        }
+    }
+}
